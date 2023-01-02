@@ -19,7 +19,7 @@
  *   '',  'bb'  => 'bb'
  */
 function concatenateStrings(value1, value2) {
-  const result = value1 + value2
+  const result = value1 + value2;
   return result;
 }
 
@@ -68,7 +68,7 @@ function getStringFromTemplate(firstName, lastName) {
  */
 function extractNameFromTemplate(value) {
   return value;
-// need to complete
+  // need to complete
 }
 
 
@@ -113,7 +113,7 @@ function removeLeadingAndTrailingWhitespaces(value) {
  *   'cat', 3 => 'catcatcat'
  */
 function repeatString(value, count) {
-return value.repeat(count);
+  return value.repeat(count);
 }
 
 /**
@@ -129,7 +129,7 @@ return value.repeat(count);
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-return str.replace(value, '');
+  return str.replace(value, '');
 }
 
 /**
@@ -144,7 +144,7 @@ return str.replace(value, '');
  *   '<a>' => 'a'
  */
 function unbracketTag(str) {
-return str.slice(1, -1);
+  return str.slice(1, -1);
 }
 
 
@@ -159,7 +159,7 @@ return str.slice(1, -1);
  *  'abcdefghijklmnopqrstuvwxyz' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
  */
 function convertToUpperCase(str) {
-return str.toUpperCase();
+  return str.toUpperCase();
 }
 
 /**
@@ -178,7 +178,7 @@ return str.toUpperCase();
  *   'info@gmail.com' => ['info@gmail.com']
  */
 function extractEmails(str) {
-return str.split(';');
+  return str.split(';');
 }
 
 /**
@@ -206,10 +206,10 @@ return str.split(';');
  */
 function getRectangleString(width, height) {
   const horizontalLine = '-';
-    const verticatlLine = '|' + (' '.repeat(width - 1)) + '|' + '\n';
-    const resultHorizontalLine = horizontalLine.repeat(width);
-    const resultVerticalLine = verticatlLine.repeat(height);
-    return resultHorizontalLine + '\n' + resultVerticalLine + resultHorizontalLine;
+  const verticatlLine = '|' + (' '.repeat(width - 1)) + '|' + '\n';
+  const resultHorizontalLine = horizontalLine.repeat(width);
+  const resultVerticalLine = verticatlLine.repeat(height);
+  return resultHorizontalLine + '\n' + resultVerticalLine + resultHorizontalLine;
 }
 
 
@@ -230,7 +230,7 @@ function getRectangleString(width, height) {
  *
  */
 function encodeToRot13(str) {
-  return str.replace(/[a-z]/gi, letter => String.fromCharCode(letter.charCodeAt(0) + (letter.toLowerCase() <= 'm' ? 13 : -13)))
+  return str.replace(/[a-z]/gi, letter => String.fromCharCode(letter.charCodeAt(0) + (letter.toLowerCase() <= 'm' ? 13 : -13)));
 }
 
 /**
@@ -247,12 +247,11 @@ function encodeToRot13(str) {
  *   isString(new String('test')) => true
  */
 function isString(value) {
- if (typeof value === 'string') {
-  return true;
- }
- else {
-  return false;
- }
+  if (typeof value === 'string') {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
@@ -280,7 +279,7 @@ function isString(value) {
  *   'Q♠' => 50
  *   'K♠' => 51
  */
-function getCardId(/* value */) {
+function getCardId( /* value */ ) {
   throw new Error('Not implemented');
 }
 
