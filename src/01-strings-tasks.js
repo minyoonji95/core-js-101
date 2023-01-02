@@ -67,8 +67,7 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
 function extractNameFromTemplate(value) {
-  return value;
-  // need to complete
+  return value.slice(7, value.length - 1);
 }
 
 
@@ -204,12 +203,8 @@ function extractEmails(str) {
  *             '└──────────┘\n'
  *
  */
-function getRectangleString(width, height) {
-  const horizontalLine = '-';
-  const verticatlLine = '|' + (' '.repeat(width - 1)) + '|' + '\n';
-  const resultHorizontalLine = horizontalLine.repeat(width);
-  const resultVerticalLine = verticatlLine.repeat(height);
-  return resultHorizontalLine + '\n' + resultVerticalLine + resultHorizontalLine;
+function getRectangleString(/* width, height */) {
+  throw new Error('Not implemented');
 }
 
 
@@ -229,8 +224,8 @@ function getRectangleString(width, height) {
  *    => 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
  *
  */
-function encodeToRot13(str) {
-  return str.replace(/[a-z]/gi, letter => String.fromCharCode(letter.charCodeAt(0) + (letter.toLowerCase() <= 'm' ? 13 : -13)));
+function encodeToRot13(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -246,12 +241,8 @@ function encodeToRot13(str) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(value) {
-  if (typeof value === 'string') {
-    return true;
-  } else {
-    return false;
-  }
+function isString(/* value */) {
+  throw new Error('Not implemented');
 }
 
 
@@ -279,7 +270,7 @@ function isString(value) {
  *   'Q♠' => 50
  *   'K♠' => 51
  */
-function getCardId( /* value */ ) {
+function getCardId(/* value */) {
   throw new Error('Not implemented');
 }
 
@@ -301,4 +292,3 @@ module.exports = {
   isString,
   getCardId,
 };
-
