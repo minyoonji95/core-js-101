@@ -19,7 +19,8 @@
  *   '',  'bb'  => 'bb'
  */
 function concatenateStrings(value1, value2) {
-  return value1 + value2;
+  let result = value1 + value2
+  return result;
 }
 
 
